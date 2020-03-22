@@ -1,0 +1,225 @@
+html, body {
+  background-color: white;
+  margin: 0px;
+height: 100%;
+width:100%;
+overflow-x: hidden;
+text-align: center;
+font-family: Verdana,Arial,sans-serif;
+
+}
+
+li{
+float: left;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+/* div położony wyżej powinien posiadać centrowanietekstu w celu wyśrodkowania divu na środku strony
+a div dziecko display in line by ułozyć te bloki w jednej linii poziomo */
+#headcontainer{
+text-align: center;
+
+
+}
+#headbar{
+
+display: inline-block;
+text-align: center;
+width: 100%;
+color: #414042;
+
+}
+#head_ul{
+  list-style-type: none;
+  text-align: center;
+  display: inline-block;
+  color: #414042;
+  width: 50%;
+/*  border: 2px solid red; */
+  height: 2rem;
+
+}
+.head_ul_li{
+    height: 100%;
+    width: 20%;
+    margin: 0;
+    padding: 0;
+  /*  border: 2px solid green; */
+}
+
+.head_ul_li a{
+  text-decoration: none;
+  font-weight: 600;
+  color: #414042;
+  font-size: 12px;
+
+}
+
+
+/***********************************************************************************/
+#header{
+  background-color: white;
+  padding: 15px;
+  margin: 0px;
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  /*border: 3px solid green;*/
+
+
+}
+
+/************************* MENU GŁÓWNE  ***************************/
+#menu{
+background-color: #e6e7e8;;
+padding: 0;
+margin-bottom: 40px;
+width: 85rem;
+height: 4rem;
+/*border: 2px solid blue;*/
+display: inline-block;
+text-align: center;
+overflow: hidden;
+
+
+}
+
+#menu_ul{
+list-style-type: none;
+margin: 0;
+padding: 0;
+width: 60rem;
+height: 4rem;
+/*border: 2px solid red;*/
+display : inline-block;
+text-align: center;
+
+}
+
+
+.menu_ul_li {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background-color: #e6e7e8;
+  width: 12rem;
+  height: 100%;
+
+}
+
+a .menu_ul_li{
+    vertical-align: middle;
+    text-decoration: none;
+    color: #414042;
+
+
+}
+
+
+.menu_ul_li:hover{
+  background-color: #c82e33;
+  color: white;
+}
+
+
+
+
+/************ GŁÓWNA TREŚĆ STRONY ************************************/
+
+#maincontainer{
+width: 85rem;
+height: 30rem;
+/*border: 2px solid green;*/
+text-align: center;
+display: inline-block;
+background-image:url(../images/gen_img.jpg);
+vertical-align: middle;
+}
+
+button,input, label {
+    display:block;
+}
+
+.formcontainer{
+    width: 37rem;
+    height: 20rem;
+
+    display: block;
+    margin-top: 7.5rem;
+    margin-left: 16rem;
+
+
+}
+
+
+.single_form{
+  float: left;
+  width: 12rem;
+  height: 5rem;
+  font-family: Verdana,Arial,sans-serif;
+  color: #414042;
+
+
+}
+
+.submit_form{
+  float: right;
+  width: 12rem;
+  height: 5rem;
+
+
+}
+  .button_submit{
+    width: 8rem;
+    height: 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-family: Verdana,Arial,sans-serif;
+    color: #414042;
+  }
+
+
+/************************************ORDERS 2*************************************************/
+
+
+#view_div
+{
+margin-top: 3rem;
+margin-left: 17.5rem;
+height: 24rem;
+width: 50rem;
+background-color: white;
+opacity: 80%;
+
+}
+
+/****************************************PRIZES*******************************************************/
+
+#prize_list
+{
+  border: 2px solid green;
+}
+
+
+
+#prize_ul{
+list-style-type: none;
+margin: 0;
+padding: 0;
+
+border: 2px solid red;
+display : inline-block;
+text-align: center;
+
+}
+
+
+#prize_ul_li {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background-color: #e6e7e8;
+
+}
