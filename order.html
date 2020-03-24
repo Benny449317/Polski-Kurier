@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>www.polskikurier.pl</title>
+    <link rel="icon" href="images/icon.png" type="image/png" size="16x16">
+    <link rel = "stylesheet"  type ="text/css" href = "css files/orders.css" />
+
+
+
+
+  </head>
+  <body>
+<div id="headcontainer">
+
+    <div id="headbar">
+        <ul id="head_ul">
+          <li class="head_ul_li"><a href="">Klienci biznesowi</a></li>
+          <li class="head_ul_li"><a href="">Wesprzyj</a></li>
+          <li class="head_ul_li"><a href="">Forum PolskiKurier</a></li>
+          <li class="head_ul_li"><a href="">Dołącz do nas</a></li>
+          <li class="head_ul_li"><a href="">Polityka prywatności</a></li>
+        </ul>
+    </div>
+
+    <div id="header">
+      <a href="index.html"><img src="images/logo.png" alt="logo.png"></a>
+    </div>
+
+    <div id="menu">
+      <ul id="menu_ul">
+        <a href="check.html"><li class="menu_ul_li">Zarządzaj przesyłką</li></a>
+        <a href="order.html"><li class="menu_ul_li">Nadaj paczkę</li></a>
+        <a href="delivery_point.html"><li class="menu_ul_li">Punkt Polski Kurier</li></a>
+        <a href="prizes.html"><li class="menu_ul_li">Cennik</li></a>
+        <a href="refound.html"><li class="menu_ul_li">Zwroty</li></a>
+      </ul>
+
+    </div>
+
+</div>
+
+
+
+
+  <div id="maincontainer">
+
+    <div class="formcontainer">
+
+
+      <form id="create_form" name="create_form" method="post" onSubmit="return Validate()" action="order2.html">
+
+        <div class="single_form">
+            <label for="shipper">Nadawca:</label>
+            <input id="shipper" autocomplete="off" type="text" name="shipper">
+            <div id="error_shipper"></div>
+        </div>
+
+
+            <div class="single_form">
+                <label for="company">Firma:</label>
+                <input id="company" autocomplete="off" type="text" name="company">
+                <div id="error_company"></div>
+            </div>
+
+
+            <div class="single_form">
+                <label for="code">Kod Pocztowy:</label>
+                <input  id="code" autocomplete="off" type="text" name="code">
+                <div id="error_code"></div>
+            </div>
+
+
+            <div class="single_form">
+                <label for="street">Ulica:</label>
+                <input id="street" autocomplete="off" type="text" name="street">
+                <div id="error_street"></div>
+            </div>
+
+
+            <div class="single_form">
+                <label for="city">Miasto:</label>
+                <input id="city" autocomplete="off" type="text" name="city">
+                <div id="error_city"></div>
+            </div>
+
+
+            <div class="single_form">
+                <label for="receiver">Odbiorca:</label>
+                <input id="receiver" autocomplete="off" type="text" name="receiver">
+                <div id="error_receiver"></div>
+            </div>
+
+
+
+
+              <div class="submit_form">
+                  <button type="submit" class="button_submit" id="button_sub">Utwórz</button>
+              </div>
+            </form>
+
+
+          </div>
+
+    </div>
+      <script src="js files/order.js" type="text/javascript"></script>
+  </body>
+</html>

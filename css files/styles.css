@@ -127,27 +127,30 @@ a .menu_ul_li{
 
 
 /********************* ZDJĘCIA *************************************/
+
+
+
+
+
 #imagecontainer{
 background-color: white;
 padding: 0px;
-width: 92.25rem;
-height: 50%;
+width: 100%;
+height: 30rem;
 /*border: 2px solid red;*/
-text-align: center;
-display: inline-block;
+text-align: left;
+display: flex;
 
 }
-.imagebox img{
-  width: 100%;
-  height: 100%;
 
-
-
+.imagebox:last-of-type{
+    margin-right: 0px;
 }
-.imagebox{
 
-/*  border: 3px solid blue; */
-  margin: 5px;
+.imagebox
+{
+  margin-right: 5%;
+  /*border: 3px solid blue;*/
   width: 30%;
   height: 95%;
   display: inline-block;
@@ -156,6 +159,56 @@ display: inline-block;
   text-align: left;
 
 }
+
+
+
+.imagebox img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+
+}
+
+@keyframes imgboxFadeInOut
+{
+  0%
+  {
+    opacity:1;
+  }
+  45%
+  {
+    opacity:1;
+  }
+  55%
+  {
+    opacity:0;
+  }
+  100%
+  {
+  opacity:0;
+  }
+}
+
+.imagebox img.img-2
+{
+animation-name: imgboxFadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 10s;
+animation-direction: alternate;
+}
+
+
+
+
+
+
+
+/*****************************************************************************************/
 
 .image_text {
   opacity: 50%;
@@ -239,6 +292,7 @@ width: 85rem;
 text-align: center;
 display: inline-block;
 padding-top: 15px;
+overflow: hidden;
 
 }
 
